@@ -151,8 +151,9 @@ public class SpecialEntity extends ApplicationPersistenceEntity implements Speci
 
     if (activePeriod instanceof WeeklyPeriodEmbeddable) {
       this.activePeriod = (WeeklyPeriodEmbeddable) activePeriod;
+    } else {
+      this.activePeriod = null;
     }
-    this.activePeriod = null;
   }
 
 }
